@@ -1,8 +1,18 @@
-import React from 'react'
+interface ChildProps {
+  color: string,
+  onClick: () => void,
+  name: string,
+  age: number
+}
 
-export const Child = () => {
+export const Child = ({color, onClick, name, age}: ChildProps) => {
   return (
-    <div>Children</div>
+    <div>
+      {color} 
+      <button onClick={onClick}>click me</button> 
+      <span>{name}</span> 
+      <p>{age}</p>
+    </div>
   )
 }
 

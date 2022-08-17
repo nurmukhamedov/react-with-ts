@@ -1,11 +1,10 @@
 import React from 'react'
-import { Child, Child2 } from './Child'
+import { Child } from './Child'
 
 const Parent = () => {
   return (
     <div> 
-        <Child/> 
-        <Child2/>
+        <Child color='#000' onClick={() => console.log('clicked')} name='Muhammadrasul' age={22} /> 
     </div>
   )
 }
