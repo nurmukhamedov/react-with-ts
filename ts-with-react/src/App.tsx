@@ -1,12 +1,12 @@
  import './App.css';
-import Parent from './components/Parent';
-import GuestList from './components/GuestList';
+import EventComponent from './components/EventComponent';
+import UserSearch from './components/UserSearch';
 
 function App() {
   return (
     <div className="App">
-       <Parent/> 
-       <GuestList/>
+        <UserSearch/> 
+        <EventComponent/>
     </div>
   );
 }
